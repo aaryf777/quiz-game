@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="quizapp.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz app</title>
+    
+</head>
+
+<body>
+    
+    <!--Home page-->
+
+    <div class="startbtn">
+        <h1>Quiz Game</h1>
+        <button>Start</button>
+    </div>
+
+    <!--Rules of the quiz (information page)-->
+
+    <div class="infobox">
+        <div class="infotitle">
+            <span>Some Rules of this Quiz : </span>
+        </div>
+        <div class="infolist">
+            <div class="info">1. You will have only <span>15</span> seconds for each question</div>
+            <div class="info">2. Once you select the answer it can't change</div>
+            <div class="info">3. You can't come back to the question after switching to next question</div>
+            <div class="info">4. You will not be able to answer the question once given time is passed</div>
+            <div class="info">5. You will get <span>4</span> points for each correct answer and deduct <span>1</span>
+                point
+                for every incorrect answer</div>
+        </div>
+        <div class="button">
+            <button class="quit">Exit</button>
+            <button class="restart">Continue</button>
+        </div>
+
+    </div>
+
+    <!--Quix-Box-->
+
+    <div class="quizbox">
+        <header>
+            <div class="title">Quiz Game Application</div>
+            <div class="timer">
+                <div class="timertext">Time left</div>
+                <div class="timevalue" id="timeleft">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="ques">
+                <span>What does HTML stand for ?</span>
+            </div>
+            <div class="optionlist">
+                <div class="option" id="1" onclick="pressed(this.id)">
+                    Hyper Text Machine Language
+                </div>
+                <div class="option " id="2" onclick="pressed(this.id)">
+                    Hyper Text Markup Language
+                </div>
+                <div class="option" id="3" onclick="pressed(this.id)">
+                    Hyper Text Multiple Language
+                </div>
+                <div class="option" id="4" onclick="pressed(this.id)">
+                    Hyper Tool Markup Language
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="totalques">
+                <span>
+                    <p id="currquesno"> 2 </p> of <p> 5 </p> Questions
+                </span>
+            </div>
+            <button class="nextbtn">Next</button>
+        </footer>
+    </div>
+    <!--Result box-->
+
+    <div class="resultbox">
+        <h2>Result</h2>
+        <div class="resulticon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="completetext">
+            Quiz Completed
+        </div>
+        <div class="scoretext">
+            <span>Score : <p id="editscore"> 2 </p> / <p id = totalscore> 20 </p></span>
+        </div>
+        <div class="buttongrp">
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
+        </div>
+
+    </div>
+
+    <!--javascript part-->
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="quizapp.js"></script>
+
+</body>
+
+</html>
