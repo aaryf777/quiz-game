@@ -99,8 +99,9 @@
     color: #ffffff;
     font-family: cursive;
     font-weight: 600;
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.3rem;
     word-spacing: 0.5rem;
+    text-shadow: 2px 2px #fff;
 }
 
 .infobox .button {
@@ -401,4 +402,161 @@
     font-weight: 500;
     color: #ffffff;
     font-family: cursive;
+}
+
+@media (max-width : 500px) {
+    .startbtn {
+       left: 55%;
+    }
+    .startbtn button {
+        font-size: 18px;
+        padding: 6px 9px;
+        border-radius: 7px;
+        font-weight: 600;
+        background: none;
+        color: #ffffff;
+        transition: all 0.3s ease;
+    
+    }
+    .startbtn h1 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+        word-spacing: 0.2rem;
+        text-shadow: 1px 1px #fff;
+    }
+    .infobox .infotitle {
+        font-size: 1.1rem;
+    }
+    
+    .infobox .infolist .info {
+       
+        font-size: 0.8rem;
+       
+    }
+    .quit, .restart {
+       margin: 4px;
+        font-size: 16px;
+        padding: 3px 6px;
+        border-radius: 5px;
+        font-weight: 500;
+    
+        color: #ffffff;
+        font-family: cursive;
+    
+    }
+    .quizbox {
+        width: 90%;
+        height: 60vh;
+        border: 2px solid white;
+        border-radius: 7px;
+        padding: 12px 17px;
+    }
+    .quizbox header {
+        width: 100%;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .quizbox header .title {
+        width: 60%;
+        font-size: 1.1rem;
+        font-weight: 500;
+        font-family: cursive;
+        word-spacing: 0.1rem;
+    
+    }
+    
+    .quizbox header .timer {
+        width: 40%;
+        margin-left: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid#ffffff;
+        padding: 2px 3px;
+        border-radius: 5px;
+    
+    }
+    
+  
+    
+    .quizbox header .timevalue {
+        font-weight: 600;
+    
+    }
+    
+    .quizbox section {
+    
+        padding: 8px 6px;
+        width: 100%;
+    }
+    
+    .quizbox section .ques {
+        margin-bottom: 1rem;
+        
+    }
+    
+    .quizbox section .ques span {
+        font-size: 1rem;
+       
+    }
+    
+    .quizbox section .optionlist {
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: left;
+       
+    }
+    
+    .quizbox section .optionlist .option {
+        width: 95%;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 3px 2px;
+        margin-bottom: 5px;
+        outline: none;
+    }
+    
+
+    .quizbox footer {
+        margin-top: 25px;
+        height: 25px;
+        width: 100%;
+        padding: 0 30px;
+        
+        
+    }
+    
+    
+    .quizbox footer .totalques span p {
+       width: 60%;
+       text-align: left;
+    }
+    
+    .quizbox footer .totalques span p:first-child {
+        padding-left: 0px;
+    }
+    
+    .quizbox footer .nextbtn {
+        width: 22%;
+        color: white;
+        font-weight: 500;
+        font-size: 0.9rem;
+        margin-left: 20px;
+        padding: 2px 3px;
+       
+    }
+    
+    
+  
+
+
 }
