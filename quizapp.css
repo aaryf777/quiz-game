@@ -546,12 +546,12 @@
     }
     
     .quizbox footer .nextbtn {
-        width: 22%;
+        width: 24%;
         color: white;
         font-weight: 500;
         font-size: 0.9rem;
         margin-left: 20px;
-        padding: 2px 3px;
+        padding: 3px 4px;
        
     }
     
